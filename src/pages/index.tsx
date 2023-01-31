@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import { Container, Main } from "../styles";
+import { Container, Main } from "styles";
 
 const Home: NextPage = () => {
   return (
