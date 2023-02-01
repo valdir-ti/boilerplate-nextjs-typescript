@@ -1,5 +1,5 @@
-import type { NextPage } from "next";
-import { Container, Main } from "styles";
+import type { NextPage } from 'next'
+import { Container, Main } from 'styles'
 
 const Home: NextPage = () => {
   return (
@@ -10,7 +10,7 @@ const Home: NextPage = () => {
         </h2>
       </Main>
     </Container>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home
