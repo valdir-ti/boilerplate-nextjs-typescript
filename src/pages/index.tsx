@@ -1,14 +1,16 @@
 import type { NextPage } from 'next'
-import { Container, Main } from 'styles'
+import { Container } from 'styles'
+
+import Navbar from './components/Navbar'
+import Main from './components/Main'
+import Sidebar from './components/Sidebar'
 
 const Home: NextPage = () => {
   return (
     <Container>
-      <Main>
-        <h2>
-          CodeStream Tecnologia with NextJS, TypeScript and Styled Components
-        </h2>
-      </Main>
+      <Navbar />
+      <Sidebar />
+      <Main />
     </Container>
   )
 }

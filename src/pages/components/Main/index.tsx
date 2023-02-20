@@ -1,7 +1,9 @@
+import { Container } from '../../../styles/main'
+
 const Main = () => (
-  <main>
-    <h3>React Avançado</h3>
-  </main>
+  <Container>
+    <h1>Main Component</h1>
+  </Container>
 )
 
 export default Main

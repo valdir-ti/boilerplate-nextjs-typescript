@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Sidebar /> should match a snapshot 1`] = `
+<div
+  class="sc-bcXHqe cJDoow"
+>
+  <h2>
+    Sidebar
+  </h2>
+</div>
+`;

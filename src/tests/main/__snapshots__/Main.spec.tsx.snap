@@ -1,9 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Main /> should match a snapshot 1`] = `
-<main>
-  <h3>
-    React Avançado
-  </h3>
+<main
+  class="sc-bcXHqe GOHQo"
+>
+  <h1>
+    Main Component
+  </h1>
 </main>
 `;

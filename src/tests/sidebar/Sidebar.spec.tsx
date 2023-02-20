@@ -1,18 +1,18 @@
 import '@testing-library/jest-dom'
 import { render, screen } from '@testing-library/react'
 
-import Main from '../../pages/components/Main'
+import Sidebar from '../../pages/components/Sidebar'
 
-describe('<Main />', () => {
+describe('<Sidebar />', () => {
   it('should render a heading', () => {
-    render(<Main />)
+    render(<Sidebar />)
     expect(
-      screen.getByRole('heading', { name: /Main Component/i })
+      screen.getByRole('heading', { name: /Sidebar/i })
     ).toBeInTheDocument()
   })
 
   it('should match a snapshot', () => {
-    const { container } = render(<Main />)
+    const { container } = render(<Sidebar />)
     expect(container.firstChild).toMatchSnapshot()
   })
 })
