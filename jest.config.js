@@ -1,7 +1,20 @@
-module.exports = {
-  testEnvironment: 'jsdom',
-  testPathIgnorePatterns: ['/node_modules/', '/.next/'],
-  collectCoverage: true,
-  collectCoverageFrom: ['src/**/*.ts(x)'],
-  setupFilesAfterEnv: ['<rootDir>/.jest/setup.ts']
+// jest.config.js
+// eslint-disable-next-line @typescript-eslint/no-var-requires, no-undef
+const nextJest = require('next/jest')
+
+const createJestConfig = nextJest({
+  dir: './'
+})
+
+/** @type {import('jest').Config} */
+const customJestConfig = {
+  moduleDirectories: ['node_modules', '<rootDir>/'],
+
+  moduleNameMapper: {
+    '@/(.*)$': '<rootDir>/src/$1'
+  },
+  testEnvironment: 'jest-environment-jsdom'
 }
+
+// eslint-disable-next-line no-undef
+module.exports = createJestConfig(customJestConfig)
