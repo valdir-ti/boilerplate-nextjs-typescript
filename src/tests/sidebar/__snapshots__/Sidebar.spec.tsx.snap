@@ -10,5 +10,91 @@ exports[`<Sidebar /> should match a snapshot 1`] = `
   >
     CodeStream
   </a>
+  <div
+    class="sc-eDvSVe hGCHuG"
+  >
+    <ul
+      class="sc-jSUZER lbCspj"
+    >
+      <p
+        class="sc-dkrFOg kfzqdx"
+        open=""
+        title="Main"
+      >
+        MAIN
+      </p>
+      <li
+        class="sc-gKPRtg hnMBme"
+        title="Dashboard"
+      >
+        <a
+          class="sc-hLBbgP gfmfEC"
+          href="/"
+        >
+          <span
+            class="sc-ftTHYK cKSgQt"
+            open=""
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+              data-testid="DashboardIcon"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z"
+              />
+            </svg>
+          </span>
+          <span
+            class="sc-iBYQkv frffnU"
+            open=""
+          >
+            Dashboard
+          </span>
+        </a>
+      </li>
+      <p
+        class="sc-dkrFOg kfzqdx"
+        open=""
+        title="Users"
+      >
+        USERS
+      </p>
+      <li
+        class="sc-gKPRtg hnMBme"
+        title="Users"
+      >
+        <a
+          class="sc-hLBbgP gfmfEC"
+          href="/users"
+        >
+          <span
+            class="sc-ftTHYK cKSgQt"
+            open=""
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+              data-testid="DashboardIcon"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z"
+              />
+            </svg>
+          </span>
+          <span
+            class="sc-iBYQkv frffnU"
+            open=""
+          >
+            Users
+          </span>
+        </a>
+      </li>
+    </ul>
+  </div>
 </div>
 `;
