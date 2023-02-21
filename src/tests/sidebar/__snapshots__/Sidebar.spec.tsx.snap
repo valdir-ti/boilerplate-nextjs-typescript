@@ -4,8 +4,11 @@ exports[`<Sidebar /> should match a snapshot 1`] = `
 <div
   class="sc-bcXHqe cJDoow"
 >
-  <h2>
-    Sidebar
-  </h2>
+  <a
+    class="sc-gswNZR dDPdEN"
+    href="/"
+  >
+    CodeStream
+  </a>
 </div>
 `;

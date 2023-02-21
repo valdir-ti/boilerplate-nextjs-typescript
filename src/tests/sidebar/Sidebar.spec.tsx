@@ -7,7 +7,7 @@ describe('<Sidebar />', () => {
   it('should render a heading', () => {
     render(<Sidebar />)
     expect(
-      screen.getByRole('heading', { name: /Sidebar/i })
+      screen.getByRole('link', { name: /CodeStream/i })
     ).toBeInTheDocument()
   })
 

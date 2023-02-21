@@ -1,9 +1,9 @@
-import { Container } from '../../../styles/sidebar'
+import { Container, Top } from '../../../styles/sidebar'
 
 const Sidebar = () => {
   return (
     <Container>
-      <h2>Sidebar</h2>
+      <Top href="/">CodeStream</Top>
     </Container>
   )
 }
