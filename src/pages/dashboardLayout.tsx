@@ -1,6 +1,7 @@
+import { useContext } from 'react'
 import { Container } from 'styles'
 
-import { SidebarProvider } from '../context/SidebarContext'
+import { SidebarContext } from '../context/SidebarContext'
 
 import Navbar from './components/Navbar'
 import Sidebar from './components/Sidebar'
@@ -10,15 +11,19 @@ type DashboardLayoutProps = {
 }
 
 const DashboardLayout = ({ children }: DashboardLayoutProps) => {
+  const sidebarContext = useContext(SidebarContext)
+
+  const {
+    state: { open }
+  } = sidebarContext
+
   return (
     <>
-      <SidebarProvider>
-        <Container>
-          <Navbar />
-          <Sidebar />
-          <main>{children}</main>
-        </Container>
-      </SidebarProvider>
+      <Container open={open}>
+        <Navbar />
+        <Sidebar />
+        <main>{children}</main>
+      </Container>
     </>
   )
 }

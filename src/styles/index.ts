@@ -1,10 +1,16 @@
 import styled from 'styled-components'
 
-export const Container = styled.div`
+interface Props {
+  open?: boolean
+}
+
+export const Container = styled.div<Props>`
   width: 100vw;
   height: 100vh;
   display: grid;
-  grid-template:
-    'sidebar navbar navbar' 5rem
-    'sidebar main main' 1fr / 240px 1fr;
+  grid-template-columns: ${(props) => (props.open ? '24rem 1fr' : '6rem 1fr')};
+  grid-template-rows: 60px 1fr;
+  grid-template-areas:
+    'sidebar navbar navbar'
+    'sidebar main main';
 `
