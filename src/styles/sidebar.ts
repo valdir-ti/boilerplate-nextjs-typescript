@@ -5,11 +5,12 @@ interface Props {
   open?: boolean
 }
 
-export const Container = styled.div`
+export const Container = styled.div<Props>`
   grid-area: sidebar;
-  width: 24rem;
+  width: ${(props) => (props.open ? '24rem' : '6rem')};
   height: 100vh;
-  background-color: rgb(253, 252, 255);
+  background-color: green;
+  /* background-color: rgb(253, 252, 255); */
 `
 
 export const Top = styled(Link)`

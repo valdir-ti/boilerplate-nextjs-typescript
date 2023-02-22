@@ -1,5 +1,8 @@
 import Head from 'next/head'
 import type { AppProps } from 'next/app'
+
+import { SidebarProvider } from '../context/SidebarContext'
+
 import GlobalStyle from 'styles/globalStyles'
 
 function App({ Component, pageProps }: AppProps) {
@@ -11,7 +14,9 @@ function App({ Component, pageProps }: AppProps) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <GlobalStyle />
-      <Component {...pageProps} />
+      <SidebarProvider>
+        <Component {...pageProps} />
+      </SidebarProvider>
     </>
   )
 }

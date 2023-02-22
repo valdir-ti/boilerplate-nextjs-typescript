@@ -1,4 +1,7 @@
 import { Dashboard } from '@mui/icons-material'
+import { useContext } from 'react'
+
+import { SidebarContext } from '../../../context/SidebarContext'
 
 import {
   Bottom,
@@ -13,21 +16,20 @@ import {
 } from '../../../styles/sidebar'
 
 const Sidebar = () => {
-  function closeSidebar() {
-    return
-  }
-
-  const open = true
+  const sidebarContext = useContext(SidebarContext)
+  const {
+    state: { open }
+  } = sidebarContext
 
   return (
-    <Container>
-      <Top href="/">CodeStream</Top>
+    <Container open={open}>
+      <Top href="/">{open ? 'CodeStream' : 'CS'}</Top>
       <Bottom>
         <ContainerCenterUl>
           <Title open={open} title={'Main'}>
             MAIN
           </Title>
-          <ContainerCenterLi title={'Dashboard'} onClick={closeSidebar}>
+          <ContainerCenterLi title={'Dashboard'}>
             <StyledLink href="/">
               <IconWrapper open={open}>
                 <Dashboard />
@@ -38,7 +40,7 @@ const Sidebar = () => {
           <Title open={open} title={'Users'}>
             USERS
           </Title>
-          <ContainerCenterLi title={'Users'} onClick={closeSidebar}>
+          <ContainerCenterLi title={'Users'}>
             <StyledLink href="/users">
               <IconWrapper open={open}>
                 <Dashboard />

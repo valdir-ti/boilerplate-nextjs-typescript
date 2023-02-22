@@ -2,7 +2,8 @@
 
 exports[`<Sidebar /> should match a snapshot 1`] = `
 <div
-  class="sc-bcXHqe cJDoow"
+  class="sc-bcXHqe jOehlx"
+  open=""
 >
   <a
     class="sc-gswNZR dDPdEN"
