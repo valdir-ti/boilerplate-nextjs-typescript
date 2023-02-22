@@ -1,5 +1,5 @@
 import { useContext } from 'react'
-import { Container } from 'styles'
+import { Container, Main } from '../styles/layout'
 
 import { SidebarContext } from '../context/SidebarContext'
 
@@ -22,7 +22,7 @@ const DashboardLayout = ({ children }: DashboardLayoutProps) => {
       <Container open={open}>
         <Navbar />
         <Sidebar />
-        <main>{children}</main>
+        <Main>{children}</Main>
       </Container>
     </>
   )
